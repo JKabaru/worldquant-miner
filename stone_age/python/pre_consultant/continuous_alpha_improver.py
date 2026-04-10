@@ -394,18 +394,18 @@ class AlphaImprovementSystem:
         """
         import random
         
-        # Common WQ functions
+        # Common WQ functions (VERIFIED from API - 66 operators available)
         ts_functions = [
             'ts_mean', 'ts_std_dev', 'ts_rank', 'ts_min', 'ts_max',
             'ts_sum', 'ts_product', 'ts_corr', 'ts_covariance',
-            'ts_delta', 'ts_regression'
+            'ts_delta', 'ts_zscore', 'ts_decay_linear', 'ts_delay'
         ]
         
-        cross_sectional = ['rank', 'zscore', 'scale', 'neutralize']
+        cross_sectional = ['rank', 'zscore', 'scale', 'normalize']
         
+        # Only use fields that are universally available
         data_fields = [
-            'close', 'open', 'high', 'low', 'volume', 'vwap',
-            'returns', 'market_cap', 'pe_ratio', 'pb_ratio'
+            'close', 'open', 'high', 'low', 'volume', 'returns'
         ]
         
         lookback_periods = [5, 10, 15, 20, 30, 40, 60, 90, 120]

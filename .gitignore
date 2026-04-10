@@ -1,66 +1,7 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.pyw
-
-*.pem
-
-# Rust
-target/
-
-results/
-
-
-# VSCode
-.vscode/
-
-credential.txt
-
-*.log
-.env
-*batch_*.html
-
-data_fields_cache_*.json
-*v2.json
-
-**/venv
-**/.venv
-
-credentials.json
-credential.json
-**/credential.txt
-**/credentials.txt
-**/credential.json
-**/credentials.json
-
-submitted_alpha.json
-
-MT5/
-AI-Trader-main/
-refly-main/
-# Ignore root constants directory
-/constants/
-# But allow generation_two/constants/operatorRAW.json for builds
-!/generation_two/constants/operatorRAW.json
-
+```
 # Database files
-**.db
-*.db-journal
-*.db-shm
-*.db-wal
-generation_two_backtests.db*
+*.sqlite
 
-# Build artifacts
-dist/
-build/
-*.spec
-*.exe
-*.deb
-*.dmg
-*.rpm
-*.tar.gz
-*.zip
-
-QUANTAXIS
+# JSON files (if they are generated/config files)
+*.json
+```
