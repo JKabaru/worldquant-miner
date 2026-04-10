@@ -32,4 +32,14 @@ htmlcov/
 # Python cache
 .mypy_cache/
 .pytest_cache/
-```
+```# Secrets and credentials
+credential.txt
+.env
+secrets.toml
+*.db
+*.sqlite
+logs/
+__pycache__/
+*.log
+alpha_correlation_db.sqlite
+test_corr*.db
