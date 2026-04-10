@@ -60,8 +60,13 @@ if 'simulation_settings' not in st.session_state:
 if 'api_keys' not in st.session_state:
     st.session_state.api_keys = {}
 
-# Database for persistence
-DB_FILE = '/workspace/stone_age/python/pre_consultant/alpha_dashboard.db'
+# Database for persistence - use /tmp on Streamlit Cloud
+if os.environ.get("STREAMLIT_SERVER_PORT"):
+    # Running on Streamlit Cloud - use writable /tmp directory
+    DB_FILE = "/tmp/alpha_dashboard.db"
+else:
+    # Running locally
+    DB_FILE = '/workspace/stone_age/python/pre_consultant/alpha_dashboard.db'
 
 def init_db():
     """Initialize SQLite database for storing submitted alphas and settings"""
