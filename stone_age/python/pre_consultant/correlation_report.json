@@ -1,0 +1,52 @@
+{
+  "total_submitted_alphas": 4,
+  "correlation_threshold": 0.7,
+  "sharpe_improvement_required": 0.1,
+  "alphas": [
+    {
+      "alpha_id": "alpha_002",
+      "expression": "rank(ts_std_dev(volume, 20))",
+      "sharpe": 1.28,
+      "fitness": 1.1,
+      "returns": 0.04,
+      "turnover": 0.25,
+      "date_created": "2024-01-16T14:30:00",
+      "submitted": false,
+      "correlation_checked": false
+    },
+    {
+      "alpha_id": "alpha_001",
+      "expression": "ts_mean(close, 10) / ts_mean(close, 40)",
+      "sharpe": 1.35,
+      "fitness": 1.2,
+      "returns": 0.05,
+      "turnover": 0.15,
+      "date_created": "2024-01-15T10:00:00",
+      "submitted": false,
+      "correlation_checked": false
+    },
+    {
+      "alpha_id": "alpha_001",
+      "expression": "ts_mean(close, 10) / ts_mean(close, 40)",
+      "sharpe": 1.35,
+      "fitness": 1.2,
+      "returns": 0.05,
+      "turnover": 0.15,
+      "date_created": "2024-01-15T10:00:00",
+      "submitted": false,
+      "correlation_checked": false
+    },
+    {
+      "alpha_id": "alpha_002",
+      "expression": "rank(ts_std_dev(volume, 20))",
+      "sharpe": 1.28,
+      "fitness": 1.1,
+      "returns": 0.04,
+      "turnover": 0.25,
+      "date_created": "2024-01-16T14:30:00",
+      "submitted": false,
+      "correlation_checked": false
+    }
+  ],
+  "generated_at": "2026-04-10T08:06:24.173822"
+}
