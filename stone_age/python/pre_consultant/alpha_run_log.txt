@@ -1,0 +1,33 @@
+OpenBLAS WARNING - could not determine the L2 cache size on this system, assuming 256k
+2026-04-10 08:11:38,770 - INFO - Loading credentials from ./credential.txt
+2026-04-10 08:11:38,771 - INFO - Authenticating with WorldQuant Brain...
+2026-04-10 08:11:39,847 - INFO - Authentication successful
+2026-04-10 08:11:39,848 - INFO - Initialized correlation database at alpha_correlation_db.sqlite
+2026-04-10 08:11:39,848 - INFO - Loaded 2 submitted alphas
+2026-04-10 08:11:39,849 - INFO - Loaded history with 0 alphas
+2026-04-10 08:11:39,849 - INFO - ============================================================
+2026-04-10 08:11:39,849 - INFO - Starting Continuous Alpha Improvement System
+2026-04-10 08:11:39,849 - INFO - ============================================================
+2026-04-10 08:11:39,849 - INFO - 
+========================================
+2026-04-10 08:11:39,849 - INFO - Iteration 1/3
+2026-04-10 08:11:39,849 - INFO - Submitted: 0/1
+2026-04-10 08:11:39,849 - INFO - ========================================
+2026-04-10 08:11:39,850 - INFO - Testing expression: rank(ts_mean((close - delay(close, 5)), 20))
+2026-04-10 08:12:01,003 - ERROR - Simulation failed: {'id': '17txk66124LAc8EniZ2VkRA', 'type': 'REGULAR', 'status': 'ERROR', 'message': 'Attempted to use inaccessible or unknown operator "delay". <linkToCommonErrorMessages>Learn more</linkToCommonErrorMessages>', 'location': {'line': 1, 'start': 22, 'end': 37, 'property': 'regular'}, 'links': {'linkToCommonErrorMessages': 'https://support.worldquantbrain.com/hc/en-us/articles/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages'}}
+2026-04-10 08:12:01,003 - WARNING - Alpha test failed, generating new expression
+2026-04-10 08:12:01,003 - INFO - 
+========================================
+2026-04-10 08:12:01,003 - INFO - Iteration 2/3
+2026-04-10 08:12:01,004 - INFO - Submitted: 0/1
+2026-04-10 08:12:01,004 - INFO - ========================================
+2026-04-10 08:12:01,004 - INFO - Testing expression: rank(correlation(volume, close, 10))
+2026-04-10 08:12:53,304 - ERROR - Simulation failed: {'id': '3RVwCZ74a4t1aV41ehzaKMFb', 'type': 'REGULAR', 'status': 'ERROR', 'message': 'Attempted to use inaccessible or unknown operator "correlation". <linkToCommonErrorMessages>Learn more</linkToCommonErrorMessages>', 'location': {'line': 1, 'start': 5, 'end': 35, 'property': 'regular'}, 'links': {'linkToCommonErrorMessages': 'https://support.worldquantbrain.com/hc/en-us/articles/18423410021783--BRAIN-TIPS-Troubleshooting-common-error-messages'}}
+2026-04-10 08:12:53,304 - WARNING - Alpha test failed, generating new expression
+2026-04-10 08:12:53,304 - INFO - 
+========================================
+2026-04-10 08:12:53,304 - INFO - Iteration 3/3
+2026-04-10 08:12:53,304 - INFO - Submitted: 0/1
+2026-04-10 08:12:53,304 - INFO - ========================================
+2026-04-10 08:12:53,305 - INFO - Generated new expression: rank(ts_rank(low, 5) * ts_product(volume, 40))
+2026-04-10 08:12:53,305 - INFO - Testing expression: rank(ts_rank(low, 5) * ts_product(volume, 40))
