@@ -1,0 +1,14 @@
+{
+  "alphas": [],
+  "strategies": [],
+  "final_stats": {
+    "alphas_tested": 0,
+    "alphas_submitted": 0,
+    "alphas_passed_correlation": 0,
+    "alphas_failed_correlation": 0,
+    "average_sharpe": 0.0,
+    "best_sharpe": 0.0,
+    "generation_rounds": 1
+  },
+  "completed_at": "2026-04-10T08:10:57.483527"
+}
